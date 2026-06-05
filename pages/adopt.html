@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <meta name="keywords" content="mythos cradle, creature adoption, adoption, mythical creature, pet, pet adoption">
+    <meta name="author" content="Michelle Meyer 21100093">
+
+    <title>Adopt</title>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+<section class="adoptHeaderContainer">
+    <header>
+        <div class="navContainer">
+            <nav class="nav">
+                <div class="logo">
+                    <a href="index.html">
+                    <img src="/assets/img/logo.png" alt="The Mythos Cradle logo">
+                    </a>
+                </div>
+
+                <div class="navLinks">
+                    <a href="../index.html">Home</a>
+                    <a class="active" href="#">Adopt</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+                <div class="wholeSearch">
+                    <div class="justSearch">
+                        <div class="searchInput">
+                            <button
+                            id="magnifyingGlass"
+                            class="searchItem">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+
+                            <input class="searchItem bar" id="searchInput"
+                            type="search"
+                            placeholder="Search"
+                            autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="searchResult">
+                    </div>
+
+                    <button id="basket" class="searchItem" data-bs-toggle="modal"
+                    data-bs-target="#cartModal">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="pageTitle">
+        <h1>Adopt A Creature</h1>
+    </div>
+</section>
+
+
+<section class="adoptInfo">
+    <h1>Your journey with a little legend begins here.</h1>
+    <p>Adopting a little legend doesn’t cost a thing — our focus is finding loving homes. To make their arrival extra special, you can choose optional starter packages made just for your creature: tiny beds, treats, toys, and more. You can even get multiple packages if your legend will have indoor and outdoor spaces. After you complete your application, we’ll arrange a magical meeting so you can see which creature is the perfect fit. We’ve also included a beginners friendly rating with our creatures so that you can gauge if you are ready to make them a part of your family.</p>
+</section>
+
+<div class="modal fade"
+id="cartModal"
+tabindex="-1"
+aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5"
+                id="exampleModalLabel">Your Cradle</h1>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body"
+            id="cartItems">
+                <p>Your cradle is empty.</p>
+            </div>
+
+            <div class="modal-footer">
+                <div class="cartTotal">
+                    Total:
+                    <div id="cartTotal">R0.00</div>
+                </div>
+
+                <button type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal">Close</button>
+            
+                <button type="button"
+                class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="creatureContainer">
+    <section class="filter">
+        <!--ADD -->
+    </section>
+
+    <section id="creatures">
+    <!--AZURON-->
+        <section class="adoptWhite">
+            <div class="flexContainerTop">
+                <div class="twoCol">
+                    <img src="../assets/img/adopt1.png" width="100%">
+                </div>
+
+                <div class="twoCol">
+                    <h1>Blue Dragon – Azuron</h1>
+
+                    <div class="adoptRow">
+                        <p>R2500.00</p>
+                        <p><s>R5000.00</s></p>
+                    </div>
+
+                    <div class="adoptRow">
+                        <div>
+                            <p>
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="star" class="fa-solid fa-star"></i>
+                                <i id="star" class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                        <p>|</p>
+                        <p>Friendly Ally</p>
+                    </div>
+
+                    <p>Azuron is a curious little dragon with a spark of mischief in his eyes. He loves exploring hidden nooks and curling up in warm spots after a playful flight, leaving tiny trails of blue sparks wherever he goes. He thrives on attention and gentle play, and his favorite games involve chasing floating spark orbs around the room.</p>
+
+                    <div class="adoptButtons">
+                        <div class="qtyCounter">
+                            <button class="qtyButton" id="qtyMinus" onclick="decQty()">-</button>
+                            <input type="number" value=0 id="inputVal">
+                            <button class="qtyButton" id="qtyPlus" onclick="incQty()">+</button>
+                        </div>
+
+                            <button class="turqButton adoptButton"
+                            id="addAzuron">Cradle a Legend</button>
+                    </div>
+
+                    <hr>
+
+                    <div class="adoptItems">
+                        <p>Bed</p>
+                        <p>:</p>
+                        <p>Cozy lava-foam bed</p>
+                    </div>
+
+                    <div class="adoptItems">
+                        <p>Treats</p>
+                        <p>:</p>
+                        <p>Frostberry treats</p>
+                    </div>
+
+                    <div class="adoptItems">
+                        <p>Toys</p>
+                        <p>:</p>
+                        <p>Flame-safe balls, Wing-wrangling hoops, Tiny treasure chests</p>
+                    </div>
+
+                    <div class="adoptItems">
+                        <p>Unique Item</p>
+                        <p>:</p>
+                        <p>Mini Fire Orb</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <!--YUKI-->
+    <section class="adoptBlue">
+        <div class="flexContainerTop">
+            <div class="twoCol">
+                <img src="../assets/img/adopt2.png" width="100%">
+            </div>
+            <div class="twoCol">
+                <h1>Kitsune - Yuki</h1>
+
+                <p>R4500</p>
+
+                <p>Yuki is a mischievous yet loving fox spirit, full of curiosity and clever ideas. She delights in playful tricks and quietly watching over her friends, her tails swishing with contentment. Yuki especially enjoys interactive games and hiding small trinkets to surprise her caretakers.</p>
+
+                <button class="turqButton">Add to Cradle</button>
+            </div>
+        </div>
+    </section>
+
+    <!--AURELIA-->
+    <section class="whiteBG">
+        <div class="flexContainerTop">
+            <div class="twoCol">
+                <img src="../assets/img/adopt3.png" width="100%">
+            </div>
+
+            <div class="twoCol">
+                <h1>Griffin – Aurelia</h1>
+
+                <p>R6500.00</p>
+
+                <p>Aurelia is a proud little griffin, courageous yet gentle. She loves climbing, exploring high perches, and curling up near those she trusts, always watching the world with wise golden eyes. She adores gentle games of chase and loves to show off her tiny but majestic wings.</p>
+
+                <button class="turqButton">Add to Cradle</button>
+            </div>
+        </div>
+    </section>
+
+    <!--LUMINA-->
+    <div class="creatureInfo">
+
+    </div>
+
+    <!--STARWIND-->
+    <section class="whiteBG">
+        <div class="flexContainerTop">
+            <div class="twoCol">
+                <img src="../assets/img/adopt5.png" width="100%">
+            </div>
+            <div class="twoCol">
+                <h1>Pegasus – Starwind</h1>
+
+                <p>R5000.00</p>
+
+                <p>Starwind is a gentle, curious Pegasus foal with a playful spirit. He loves short flights and sunny naps, his gleaming wings always ready for discovery. He enjoys small games of chase and nuzzles to show affection, quickly forming strong bonds with those he trusts.</p>
+
+                <button class="turqButton">Add to Cradle</button>
+            </div>
+        </div>
+    </section>
+
+    <!--BRIAR-->
+    <div class="creatureInfo">
+
+    </div>
+</section>
+
+
+
+
+
+    <footer>
+        <div class="footer">
+            <div id="footerLeft">
+                <div class="logo">
+                    <a href="#">
+                    <img src="/assets/img/logo.png" alt="The Mythos Cradle logo">
+                    </a>
+                </div>
+                <div class="leftSubhead">
+                    <p>Where every legendary creature<br>finds a loving home.</p>
+                </div>
+            </div>
+
+            <div class="footerMiddle">
+                <h3>Company</h3>
+                <a href="#">Home</a>
+                <a href="pages/adopt.html">Adopt</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footerRight">
+                <h3>Social Media Links</h3>
+                <div class="socialIcons">
+                    <div><a href="https://www.facebook.com/theopenwindow/" target="_blank">
+                        <img src="/assets/img/sm1.png" alt="facebook logo"></a></div>
+                    
+                    <div><a href="https://www.tiktok.com/@open_window_" target="_blank">
+                        <img src="/assets/img/sm2.png" alt="tiktok logo"></a></div>
+
+                    <div><a href="https://www.instagram.com/openwindowinstitute" target="_blank">
+                        <img src="/assets/img/sm3.png" alt="instagram logo"></a></div>
+
+                    <div><a href="https://x.com/open_window_" target="_blank">
+                        <img src="/assets/img/sm4.png" alt="x.com logo"></a></div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footerLegal">
+            <div class="legealLeft">
+            <p>All Rights Reserved &copy Open Window 2024</p>
+            </div>
+            <div class="legalRight">
+                <p>Terms & Conditions</p> <!--if time: hover state-->
+                <p>Privacy & Policy</p> <!--if time: hover state-->
+            </div>
+        </div>
+    </footer>
+
+<!--Bootstrap 5-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<!--Font Awesome-->
+<script src="https://kit.fontawesome.com/1316822bd3.js" crossorigin="anonymous"></script>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html> 
